@@ -39,7 +39,7 @@ html {
     // side menu
     #side-menu {
         display: none;
-        height: 93%;
+        height: 92%;
         width: 60%;
         background-color: $primary_2;
         position: absolute;
@@ -52,23 +52,24 @@ html {
             flex-direction: column;
             li {
                 list-style-type: none;
-                margin: 30px 0;
+                margin: 25px 0;
                 cursor: pointer;
                 a {
                     text-decoration: none;
                     padding-bottom: 2px;
                     color: $white;
                     transition: 0.1s color ease-in-out;
+                    font-size: 10px;
                 }
                 a:hover {
                     border-bottom: 3px solid $primary;
                 }
-                a:active {
-                    color: $primary_2;
+                a:focus {
+                    color: $primary;
                 }
                 button {
-                    height: 38px;
-                    width: 120px;
+                    height: 28px;
+                    width: 110px;
                     border: none;
                     outline: none;
                     border-radius: 5px;
@@ -123,11 +124,11 @@ html {
                     border-bottom: 3px solid $primary;
                 }
                 a:active {
-                    color: $primary_2;
+                    color: $primary;
                 }
             }
             li:first-child {
-                margin: 0 12% 0 5%;
+                margin: 0 10% 0 5%;
             }
             li:first-child a:hover {
                 border: none;
@@ -174,28 +175,28 @@ html {
             flex-direction: column;
             text-align: center;
             .hand {
-                font-size: 25px;
+                font-size: 17px;
                 margin-top: -150px;
                 padding-bottom: 25px;
                 filter: drop-shadow(2px 2px 3px $black);
             }
             .name {
-                font-size: 50px;
+                font-size: 40px;
                 padding-bottom: 20px;
                 .sign {
-                    font-size: 80px;
+                    font-size: 70px;
                     font-weight: bolder;
                     color: $primary;
                 }
                 h6 {
                     font-weight: lighter;
-                    font-size: 25px;
+                    font-size: 20px;
                     padding-bottom: 30px;
                 }
             }
             .intro {
-                font-size: 16px;
-                padding: 0 25% 20px 25%;
+                font-size: 15px;
+                padding: 0 30% 20px 30%;
             }
             .button {
                 a {
@@ -232,7 +233,7 @@ html {
         .title {
             flex: 10%;
             @include flex;
-            font-size: 25px;
+            font-size: 22px;
             color: $white;
         }
         .work-head {
@@ -321,7 +322,7 @@ html {
             flex-direction: column;
             padding: 0 10%;
             h2 {
-                font-size: 30px;
+                font-size: 25px;
                 border-bottom: 3px solid $primary;
                 padding-bottom: 5px;
                 margin-bottom: 50px;
@@ -360,22 +361,43 @@ html {
             }
         }
     }
+    // work history
+    #work-history {
+        height: 100vh;
+        @include flex;
+        flex-direction: column;
+        .head {
+            flex: 20%;
+            width: 100%;
+            @include flex;
+            background-color: $hover;
+            font-size: 35px;
+            color: $white;
+        }
+        .tail {
+            flex: 80%;
+            width: 100%;
+            background-color: $black;
+        }
+    }
     // contact
     #contact {
-        height: 80vh;
+        height: 85vh;
+        background-color: $primary_2;
         @include flex;
-        background-color: $black;
         .left {
-            flex: 40%;
+            padding-right: 2%;
+            flex: 50%;
             height: 100%;
         }
         .mid {
+            border-radius: 5px;
             flex: 50%;
-            height: 100%;
-            background-color: $primary_2;
+            height: 90%;
             @include flex;
             flex-direction: column;
             color: $white;
+            background-color: $black;
             h2 {
                 font-size: 30px;
                 padding-bottom: 50px;
@@ -384,16 +406,17 @@ html {
                 @include flex;
                 flex-direction: column;
                 input[type="text"] {
-                    margin-bottom: 30px;
+                    margin-bottom: 50px;
                     border: none;
                     outline: none;
-                    width: 20vw;
                     background: none;
+                    width: 20vw;
                     border-bottom: 3px solid $primary;
                     color: $white;
                     font-size: 15px;
                 }
                 input[type="text"]::placeholder {
+                    padding-left: 2%;
                     font-size: 15px;
                 }
                 input[type="submit"] {
@@ -431,7 +454,7 @@ html {
         }
     }
     footer {
-        height: 15vh;
+        height: 5vh;
         background-color: $hover;
         color: $white;
         @include flex;
@@ -445,6 +468,7 @@ html {
         overflow: hidden;
     }
     #container {
+        overflow-x: hidden;
         #side-menu {
             display: block;
         }
@@ -476,7 +500,11 @@ html {
                 backdrop-filter: blur(2px);
                 .hand {
                     font-size: 15px;
-                    margin-top: -150px;
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        font-size: 0;
+                    }
                 }
                 .name {
                     font-size: 28px;
@@ -497,8 +525,9 @@ html {
                     a {
                         text-decoration: none;
                         button {
-                            height: 35px;
-                            width: 115px;
+                            height: 32px;
+                            width: 110px;
+                            font-size: 11px;
                         }
                     }
                 }
@@ -541,8 +570,9 @@ html {
             .more {
                 a {
                     button {
-                        height: 40px;
-                        width: 160px;
+                        height: 35px;
+                        width: 110px;
+                        font-size: 11px;
                     }
                 }
             }
@@ -555,41 +585,49 @@ html {
             .info {
                 flex: 50%;
                 padding: 0 15%;
+                h2 {
+                    font-size: 20px;
+                    margin-bottom: 30px;
+                }
             }
             .pics {
-                flex: 50%;
+                flex: 40%;
+                padding-top: 30px;
                 .shape {
                     height: 70%;
                     width: 65%;
+                    margin-right: -20px;
                 }
             }
         }
         #contact {
             height: 120vh;
             flex-direction: column;
+            padding: 0 3%;
             .left {
-                flex: 35%;
+                border-top: 3px solid $hover;
+                flex: 30%;
             }
             .mid {
                 width: 100%;
-                flex: 30%;
+                flex: 20%;
                 h2 {
-                    font-size: 23px;
+                    font-size: 18px;
                     padding-bottom: 40px;
                 }
                 form {
                     input[type="text"] {
                         margin-bottom: 30px;
-                        width: 80vw;
+                        width: 70vw;
                         font-size: 13px;
                         margin-bottom: 40px;
                     }
                     input[type="text"]::placeholder {
-                        font-size: 12px;
+                        font-size: 10px;
                     }
                     input[type="submit"] {
-                        height: 34px;
-                        width: 130px;
+                        height: 30px;
+                        width: 100px;
                         font-size: 10px;
                     }
                 }
@@ -616,14 +654,15 @@ html {
     // main-area
     #container {
         #main {
+            height: 95vh;
             .box {
-                height: 70%;
+                height: 60%;
                 width: 96%;
                 .hand {
-                    margin-top: -140px;
+                    margin-top: -50px;
                 }
                 .name {
-                    font-size: 27px;
+                    font-size: 25px;
                     padding: 30px 0 60px 0;
                     .sign {
                         font-size: 35px;
@@ -657,7 +696,6 @@ html {
             }
         }
         .pics {
-            flex: 40%;
             .shape {
                 height: 70%;
                 width: 65%;
