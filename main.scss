@@ -36,6 +36,16 @@ html {
 }
 
 #container {
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100%;
+  scroll-snap-type: y proximity;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: url(back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
   // side menu
   #side-menu {
     display: none;
@@ -88,15 +98,7 @@ html {
     }
   }
   // side menu end
-  height: 100vh;
-  width: 100%;
-  scroll-snap-type: y proximity;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  background: url(back.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow-x: hidden;
+
   .item {
     scroll-snap-align: center;
   }
