@@ -23,6 +23,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Jost", sans-serif;
+}
+
 #container {
   overflow-x: hidden;
   height: 100vh;
@@ -63,6 +67,7 @@ html {
   color: #ffffff;
   transition: 0.1s color ease-in-out;
   font-size: 10px;
+  font-family: "Jost", sans-serif;
 }
 #container #side-menu ul li a:hover {
   border-bottom: 3px solid #7d0883;
@@ -79,6 +84,7 @@ html {
   background-color: #7d0883;
   color: #ffffff;
   cursor: pointer;
+  font-family: "Jost", sans-serif;
 }
 #container #side-menu ul li button:hover {
   background-color: #280429;
@@ -139,6 +145,7 @@ html {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.1s ease-in-out;
+  font-family: "Jost", sans-serif;
 }
 #container header ul li:nth-child(6) button:hover {
   background-color: #280429;
@@ -180,6 +187,7 @@ html {
 #container #main .box .name {
   font-size: 40px;
   padding-bottom: 20px;
+  font-family: "Bree Serif", serif;
 }
 #container #main .box .name .sign {
   font-size: 70px;
@@ -232,6 +240,7 @@ html {
   align-items: center;
   font-size: 22px;
   color: #ffffff;
+  font-family: "Bree Serif", serif;
 }
 #container #project .work-head {
   flex: 90%;
@@ -239,6 +248,7 @@ html {
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
   padding: 0 5%;
+  font-size: 13px;
 }
 #container #project .work-head .work {
   height: 200px;
@@ -302,6 +312,7 @@ html {
   border-radius: 5px;
   font-size: 12px;
   transition: 0.1s background-color ease-in-out;
+  font-family: "Jost", sans-serif;
 }
 #container #project .more a button:hover {
   background-color: #280429;
@@ -329,6 +340,8 @@ html {
   border-bottom: 3px solid #7d0883;
   padding-bottom: 5px;
   margin-bottom: 50px;
+  font-family: "Bree Serif", serif;
+  font-weight: lighter;
 }
 #container #about .info .tech {
   font-size: 12px;
@@ -378,8 +391,9 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #280429;
-  font-size: 35px;
+  font-size: 30px;
   color: #ffffff;
+  font-family: "Bree Serif", serif;
 }
 #container #work-history .tail {
   flex: 80%;
