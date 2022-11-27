@@ -23,10 +23,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Jost", sans-serif;
-}
-
 #container {
   overflow-x: hidden;
   height: 100vh;
@@ -38,6 +34,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
+  font-family: "Jost", sans-serif;
 }
 #container #side-menu {
   display: none;
@@ -66,7 +63,7 @@ body {
   padding-bottom: 2px;
   color: #ffffff;
   transition: 0.1s color ease-in-out;
-  font-size: 10px;
+  font-size: 11px;
   font-family: "Jost", sans-serif;
 }
 #container #side-menu ul li a:hover {
@@ -77,7 +74,7 @@ body {
 }
 #container #side-menu ul li button {
   height: 28px;
-  width: 110px;
+  width: 120px;
   border: none;
   outline: none;
   border-radius: 5px;
@@ -120,6 +117,7 @@ body {
   color: #ffffff;
   padding-bottom: 2px;
   transition: 0.1s border-bottom ease-in-out;
+  font-size: 14px;
 }
 #container header ul li:not(first-child) a:hover {
   border-bottom: 3px solid #7d0883;
@@ -202,6 +200,7 @@ body {
 #container #main .box .intro {
   font-size: 15px;
   padding: 0 30% 20px 30%;
+  letter-spacing: 1px;
 }
 #container #main .box .button a {
   text-decoration: none;
@@ -215,7 +214,7 @@ body {
   background-color: #7d0883;
   color: #ffffff;
   border-radius: 5px;
-  font-size: 11px;
+  font-size: 13px;
 }
 #container #main .box .button a button:hover {
   background-color: #280429;
@@ -334,6 +333,8 @@ body {
   align-items: flex-start;
   flex-direction: column;
   padding: 0 10%;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 #container #about .info h2 {
   font-size: 25px;
@@ -486,6 +487,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 700px) {
@@ -670,10 +672,10 @@ body {
     width: 96%;
   }
   #container #main .box .hand {
-    margin-top: -50px;
+    margin-top: -20px;
   }
   #container #main .box .name {
-    font-size: 25px;
+    font-size: 24px;
     padding: 30px 0 60px 0;
   }
   #container #main .box .name .sign {
@@ -696,12 +698,13 @@ body {
   #about .info {
     flex: 50%;
     padding: 0 15%;
+    font-size: 13px;
   }
   #about .info ul li {
-    font-size: 12px;
+    font-size: 11px;
   }
   #about .pics .shape {
     height: 70%;
-    width: 65%;
+    width: 60%;
   }
 }/*# sourceMappingURL=main.css.map */
