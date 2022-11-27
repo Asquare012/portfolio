@@ -32,6 +32,7 @@ html {
   background: url(back.png);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }
 #container #side-menu {
   display: none;
