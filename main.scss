@@ -4,6 +4,10 @@ $primary_2: #090e13;
 $white: #ffffff;
 $black: #000000;
 $blur: #11111100;
+// font
+
+$primaryF: "Bree Serif", serif;
+$secondaryF: "Jost", sans-serif;
 @mixin flex {
   display: flex;
   justify-content: center;
@@ -46,7 +50,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
-  font-family: "Jost", sans-serif;
+  font-family: $secondaryF;
   // side menu
   #side-menu {
     display: none;
@@ -88,7 +92,7 @@ html {
           background-color: $primary;
           color: $white;
           cursor: pointer;
-          font-family: "Jost", sans-serif;
+          font-family: $secondaryF;
         }
         button:hover {
           background-color: $hover;
@@ -143,7 +147,7 @@ html {
       li:nth-child(6) {
         margin-left: 10%;
         button {
-          padding: 11px 22px;
+          padding: 8px 20px;
           border: none;
           outline: none;
           background-color: $primary;
@@ -151,7 +155,7 @@ html {
           border-radius: 5px;
           cursor: pointer;
           transition: background-color 0.1s ease-in-out;
-          font-family: "Jost", sans-serif;
+          font-family: $secondaryF;
         }
         button:hover {
           background-color: $hover;
@@ -182,6 +186,7 @@ html {
       @include flex;
       flex-direction: column;
       text-align: center;
+      text-shadow: 2px 2px 2px $black;
       .hand {
         font-size: 17px;
         margin-top: -150px;
@@ -191,7 +196,7 @@ html {
       .name {
         font-size: 40px;
         padding-bottom: 20px;
-        font-family: "Bree Serif", serif;
+        font-family: $primaryF;
         .sign {
           font-size: 70px;
           font-weight: bolder;
@@ -245,7 +250,7 @@ html {
       @include flex;
       font-size: 22px;
       color: $white;
-      font-family: "Bree Serif", serif;
+      font-family: $primaryF;
     }
     .work-head {
       flex: 90%;
@@ -309,7 +314,7 @@ html {
           border-radius: 5px;
           font-size: 12px;
           transition: 0.1s background-color ease-in-out;
-          font-family: "Jost", sans-serif;
+          font-family: $secondaryF;
         }
         button:hover {
           background-color: $hover;
@@ -390,7 +395,7 @@ html {
       background-color: $hover;
       font-size: 30px;
       color: $white;
-      font-family: "Bree Serif", serif;
+      font-family: $primaryF;
     }
     .tail {
       flex: 80%;
@@ -496,7 +501,7 @@ html {
     }
     // header
     header {
-      backdrop-filter: blur(3px);
+      backdrop-filter: blur(5px);
       ul {
         li:not(first-child) {
           display: none;
@@ -682,7 +687,7 @@ html {
         }
         .name {
           font-size: 24px;
-          padding: 30px 0 60px 0;
+          padding: 30px 0 40px 0;
           .sign {
             font-size: 35px;
           }
@@ -707,9 +712,8 @@ html {
     flex-direction: column-reverse;
     .info {
       flex: 50%;
-      padding: 0 15%;
-      font-size: 13px;
-
+      padding: 0 10%;
+      letter-spacing: 1px;
       ul {
         li {
           font-size: 11px;
@@ -719,7 +723,7 @@ html {
     .pics {
       .shape {
         height: 70%;
-        width: 60%;
+        width: 35%;
       }
     }
   }
