@@ -135,7 +135,7 @@ html {
   margin-left: 10%;
 }
 #container header ul li:nth-child(6) button {
-  padding: 11px 22px;
+  padding: 8px 20px;
   border: none;
   outline: none;
   background-color: #7d0883;
@@ -175,6 +175,7 @@ html {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  text-shadow: 2px 2px 2px #000000;
 }
 #container #main .box .hand {
   font-size: 17px;
@@ -504,7 +505,7 @@ html {
     scroll-snap-align: start;
   }
   #container header {
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(5px);
   }
   #container header ul li:not(first-child) {
     display: none;
@@ -676,7 +677,7 @@ html {
   }
   #container #main .box .name {
     font-size: 24px;
-    padding: 30px 0 60px 0;
+    padding: 30px 0 40px 0;
   }
   #container #main .box .name .sign {
     font-size: 35px;
@@ -697,14 +698,14 @@ html {
   }
   #about .info {
     flex: 50%;
-    padding: 0 15%;
-    font-size: 13px;
+    padding: 0 10%;
+    letter-spacing: 1px;
   }
   #about .info ul li {
     font-size: 11px;
   }
   #about .pics .shape {
     height: 70%;
-    width: 60%;
+    width: 35%;
   }
 }/*# sourceMappingURL=main.css.map */
