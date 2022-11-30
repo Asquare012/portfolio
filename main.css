@@ -621,11 +621,14 @@ html {
   }
   #container #about .info h2 {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+  }
+  #container #about .info .tech {
+    padding: 10px 0;
   }
   #container #about .pics {
     flex: 40%;
-    padding: 20px 5% 0 5%;
+    padding: 20px 3% 0 3%;
   }
   #container #about .pics .shape {
     height: 70%;
