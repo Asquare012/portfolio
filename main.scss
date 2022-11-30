@@ -40,7 +40,6 @@ html {
 }
 
 #container {
-  overflow-x: hidden;
   height: 100vh;
   width: 100%;
   scroll-snap-type: y proximity;
@@ -49,7 +48,6 @@ html {
   background: url(back.png);
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: hidden;
   font-family: $secondaryF;
   // side menu
   #side-menu {
@@ -59,8 +57,6 @@ html {
     background-color: $primary_2;
     position: absolute;
     z-index: 1;
-    overflow: hidden;
-    right: -60%;
     transition: right 0.1s ease-in-out;
     ul {
       @include flex;
@@ -264,7 +260,7 @@ html {
         width: 70%;
         @include flex;
         flex-direction: column;
-        background-color: $primary_2;
+        background-color: #686464;
         .project-name {
           color: $white;
         }
@@ -281,7 +277,7 @@ html {
               border: none;
               outline: none;
               cursor: pointer;
-              background-color: $hover;
+              background-color: $primary;
               color: $white;
               border-radius: 5px;
               font-size: 11px;
@@ -385,11 +381,11 @@ html {
   }
   // work history
   #work-history {
-    height: 100vh;
+    height: 90vh;
     @include flex;
     flex-direction: column;
     .head {
-      flex: 20%;
+      flex: 10%;
       width: 100%;
       @include flex;
       background-color: $hover;
@@ -401,6 +397,27 @@ html {
       flex: 80%;
       width: 100%;
       background-color: $black;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      place-items: center;
+      .work {
+        height: 200px;
+        width: 70%;
+        background-color: red;
+        margin: 20px;
+        transform: skew(-10deg);
+        @include flex;
+        .image {
+          flex: 30%;
+          height: 100%;
+          background-color: green;
+        }
+        .info {
+          flex: 70%;
+          height: 100%;
+          background-color: purple;
+        }
+      }
     }
   }
   // contact
@@ -409,7 +426,7 @@ html {
     background-color: $primary_2;
     @include flex;
     .left {
-      padding-right: 2%;
+      padding: 0 2%;
       flex: 50%;
       height: 100%;
     }
@@ -492,7 +509,6 @@ html {
     overflow: hidden;
   }
   #container {
-    overflow-x: hidden;
     #side-menu {
       display: block;
     }
@@ -624,20 +640,41 @@ html {
         }
       }
     }
+    // work history
+    #work-history {
+      height: 150vh;
+      .head {
+        flex: 5%;
+        font-size: 20px;
+      }
+      .tail {
+        flex: 95%;
+        grid-template-columns: 1fr;
+        .work {
+          height: 200px;
+          width: 70%;
+          .image {
+            flex: 30%;
+          }
+          .info {
+            flex: 70%;
+          }
+        }
+      }
+    }
+    // contact
     #contact {
-      height: 120vh;
+      height: 95vh;
       flex-direction: column;
       padding: 0 3%;
       .left {
-        border-top: 3px solid $hover;
         flex: 30%;
       }
       .mid {
         width: 100%;
-        flex: 20%;
+        flex: 25%;
         h2 {
           font-size: 18px;
-          padding-bottom: 40px;
         }
         form {
           input[type="text"] {
@@ -658,7 +695,7 @@ html {
       }
       .right {
         width: 100%;
-        flex: 5%;
+        flex: 2%;
         ul {
           @include flex;
           li {
