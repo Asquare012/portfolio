@@ -260,7 +260,6 @@ html {
         width: 70%;
         @include flex;
         flex-direction: column;
-        background-color: #686464;
         .project-name {
           color: $white;
         }
