@@ -622,11 +622,11 @@ html {
   }
   #container #about .info h2 {
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   #container #about .pics {
     flex: 40%;
-    padding-top: 30px;
+    padding: 20px 5% 0 5%;
   }
   #container #about .pics .shape {
     height: 70%;
