@@ -24,7 +24,6 @@ html {
 }
 
 #container {
-  overflow-x: hidden;
   height: 100vh;
   width: 100%;
   scroll-snap-type: y proximity;
@@ -33,7 +32,6 @@ html {
   background: url(back.png);
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: hidden;
   font-family: "Jost", sans-serif;
 }
 #container #side-menu {
@@ -43,8 +41,6 @@ html {
   background-color: #090e13;
   position: absolute;
   z-index: 1;
-  overflow: hidden;
-  right: -60%;
   transition: right 0.1s ease-in-out;
 }
 #container #side-menu ul {
@@ -257,7 +253,7 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #090e13;
+  background-color: #686464;
 }
 #container #project .work-head .work .project-name {
   color: #ffffff;
@@ -279,7 +275,7 @@ html {
   border: none;
   outline: none;
   cursor: pointer;
-  background-color: #280429;
+  background-color: #7d0883;
   color: #ffffff;
   border-radius: 5px;
   font-size: 11px;
@@ -380,14 +376,14 @@ html {
   border-radius: 5px;
 }
 #container #work-history {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 #container #work-history .head {
-  flex: 20%;
+  flex: 10%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -401,6 +397,29 @@ html {
   flex: 80%;
   width: 100%;
   background-color: #000000;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+#container #work-history .tail .work {
+  height: 200px;
+  width: 70%;
+  background-color: red;
+  margin: 20px;
+  transform: skew(-10deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container #work-history .tail .work .image {
+  flex: 30%;
+  height: 100%;
+  background-color: green;
+}
+#container #work-history .tail .work .info {
+  flex: 70%;
+  height: 100%;
+  background-color: purple;
 }
 #container #contact {
   height: 85vh;
@@ -410,7 +429,7 @@ html {
   align-items: center;
 }
 #container #contact .left {
-  padding-right: 2%;
+  padding: 0 2%;
   flex: 50%;
   height: 100%;
 }
@@ -494,9 +513,6 @@ html {
 @media screen and (max-width: 700px) {
   body {
     overflow: hidden;
-  }
-  #container {
-    overflow-x: hidden;
   }
   #container #side-menu {
     display: block;
@@ -617,22 +633,41 @@ html {
     width: 65%;
     margin-right: -20px;
   }
+  #container #work-history {
+    height: 150vh;
+  }
+  #container #work-history .head {
+    flex: 5%;
+    font-size: 20px;
+  }
+  #container #work-history .tail {
+    flex: 95%;
+    grid-template-columns: 1fr;
+  }
+  #container #work-history .tail .work {
+    height: 200px;
+    width: 70%;
+  }
+  #container #work-history .tail .work .image {
+    flex: 30%;
+  }
+  #container #work-history .tail .work .info {
+    flex: 70%;
+  }
   #container #contact {
-    height: 120vh;
+    height: 95vh;
     flex-direction: column;
     padding: 0 3%;
   }
   #container #contact .left {
-    border-top: 3px solid #280429;
     flex: 30%;
   }
   #container #contact .mid {
     width: 100%;
-    flex: 20%;
+    flex: 25%;
   }
   #container #contact .mid h2 {
     font-size: 18px;
-    padding-bottom: 40px;
   }
   #container #contact .mid form input[type=text] {
     margin-bottom: 30px;
@@ -650,7 +685,7 @@ html {
   }
   #container #contact .right {
     width: 100%;
-    flex: 5%;
+    flex: 2%;
   }
   #container #contact .right ul {
     display: flex;
