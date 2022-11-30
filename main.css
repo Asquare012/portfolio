@@ -253,7 +253,6 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #686464;
 }
 #container #project .work-head .work .project-name {
   color: #ffffff;
