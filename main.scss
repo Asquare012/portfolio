@@ -52,19 +52,21 @@ html {
   // side menu
   #side-menu {
     display: none;
-    height: 92%;
-    width: 60%;
+    height: 0;
+    width: 100%;
     background-color: $primary_2;
     position: absolute;
     z-index: 1;
-    transition: right 0.1s ease-in-out;
+    transition: height 0.1s ease-in-out;
     ul {
       @include flex;
       flex-direction: column;
+      display: none;
       li {
         list-style-type: none;
-        margin: 25px 0;
+        margin: 40px 0;
         cursor: pointer;
+        text-align: center;
         a {
           text-decoration: none;
           padding-bottom: 2px;
@@ -383,14 +385,15 @@ html {
     height: 90vh;
     @include flex;
     flex-direction: column;
+    color: $white;
     .head {
       flex: 10%;
       width: 100%;
       @include flex;
       background-color: $hover;
-      font-size: 30px;
+      font-size: 22px;
       color: $white;
-      font-family: $primaryF;
+      font-family: $secondaryF;
     }
     .tail {
       flex: 80%;
@@ -416,6 +419,15 @@ html {
           flex: 70%;
           height: 100%;
           background-color: #280429;
+          @include flex;
+          align-items: flex-start;
+          flex-direction: column;
+          padding: 0 0 0 5%;
+          font-size: 14px;
+          font-family: $secondaryF;
+        }
+        .start {
+          font-size: 17px;
         }
       }
     }
