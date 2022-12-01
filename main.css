@@ -403,7 +403,6 @@ html {
 #container #work-history .tail .work {
   height: 200px;
   width: 70%;
-  background-color: red;
   margin: 20px;
   transform: skew(-10deg);
   display: flex;
@@ -413,12 +412,14 @@ html {
 #container #work-history .tail .work .image {
   flex: 30%;
   height: 100%;
-  background-color: green;
+  background: url(ospa2.jpg);
+  background-size: cover;
+  filter: grayscale(30%);
 }
-#container #work-history .tail .work .info {
+#container #work-history .tail .work .details {
   flex: 70%;
   height: 100%;
-  background-color: purple;
+  background-color: #280429;
 }
 #container #contact {
   height: 85vh;
@@ -622,7 +623,7 @@ html {
   }
   #container #about .info h2 {
     font-size: 20px;
-    margin: -30px 0 10px 0;
+    margin: -10px 0 10px 0;
   }
   #container #about .info .tech {
     padding: 10px 0;
@@ -638,6 +639,7 @@ html {
     height: 70%;
     width: 65%;
     margin-right: -20px;
+    margin-bottom: -40px;
   }
   #container #work-history {
     height: 150vh;
@@ -657,7 +659,7 @@ html {
   #container #work-history .tail .work .image {
     flex: 30%;
   }
-  #container #work-history .tail .work .info {
+  #container #work-history .tail .work .details {
     flex: 70%;
   }
   #container #contact {
