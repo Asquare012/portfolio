@@ -1,17 +1,20 @@
+// side menu
 let box = document.querySelector("#side-menu");
 let button = document.querySelector("#action");
 let img = document.querySelector("#change");
-box.style.right = "-60%";
+let menuItem = document.querySelector(".menu-item");
 
 button.addEventListener("click", show);
-let num = 2;
 
 function show() {
-    if (box.style.right == "-60%") {
-        img.src = "close.svg";
-        box.style.right = "0";
-    } else {
-        box.style.right = "-60%";
-        img.src = "hamburger.svg";
-    }
+  if (box.style.height == "70%") {
+    img.src = "hamburger.svg";
+    box.style.height = "0";
+    menuItem.style.display = "none";
+  } else {
+    img.src = "close.svg";
+    box.style.height = "70%";
+
+    menuItem.style.display = "block";
+  }
 }
