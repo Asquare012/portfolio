@@ -402,19 +402,20 @@ html {
       .work {
         height: 200px;
         width: 70%;
-        background-color: red;
         margin: 20px;
         transform: skew(-10deg);
         @include flex;
         .image {
           flex: 30%;
           height: 100%;
-          background-color: green;
+          background: url(ospa2.jpg);
+          background-size: cover;
+          filter: grayscale(30%);
         }
-        .info {
+        .details {
           flex: 70%;
           height: 100%;
-          background-color: purple;
+          background-color: #280429;
         }
       }
     }
@@ -627,7 +628,7 @@ html {
         padding: 0 14%;
         h2 {
           font-size: 20px;
-          margin: -30px 0 10px 0;
+          margin: -10px 0 10px 0;
         }
         .tech {
           padding: 10px 0;
@@ -645,6 +646,7 @@ html {
           height: 70%;
           width: 65%;
           margin-right: -20px;
+          margin-bottom: -40px;
         }
       }
     }
@@ -664,7 +666,7 @@ html {
           .image {
             flex: 30%;
           }
-          .info {
+          .details {
             flex: 70%;
           }
         }
