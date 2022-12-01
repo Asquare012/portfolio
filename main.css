@@ -36,23 +36,25 @@ html {
 }
 #container #side-menu {
   display: none;
-  height: 92%;
-  width: 60%;
+  height: 0;
+  width: 100%;
   background-color: #090e13;
   position: absolute;
   z-index: 1;
-  transition: right 0.1s ease-in-out;
+  transition: height 0.1s ease-in-out;
 }
 #container #side-menu ul {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  display: none;
 }
 #container #side-menu ul li {
   list-style-type: none;
-  margin: 25px 0;
+  margin: 40px 0;
   cursor: pointer;
+  text-align: center;
 }
 #container #side-menu ul li a {
   text-decoration: none;
@@ -380,6 +382,7 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: #ffffff;
 }
 #container #work-history .head {
   flex: 10%;
@@ -388,9 +391,9 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #280429;
-  font-size: 30px;
+  font-size: 22px;
   color: #ffffff;
-  font-family: "Bree Serif", serif;
+  font-family: "Jost", sans-serif;
 }
 #container #work-history .tail {
   flex: 80%;
@@ -420,6 +423,17 @@ html {
   flex: 70%;
   height: 100%;
   background-color: #280429;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 0 0 5%;
+  font-size: 14px;
+  font-family: "Jost", sans-serif;
+}
+#container #work-history .tail .work .start {
+  font-size: 17px;
 }
 #container #contact {
   height: 85vh;
