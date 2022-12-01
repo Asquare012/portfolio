@@ -623,7 +623,7 @@ html {
   }
   #container #about .info h2 {
     font-size: 20px;
-    margin: -10px 0 10px 0;
+    margin: -10px 0 8px 0;
   }
   #container #about .info .tech {
     padding: 10px 0;
@@ -638,8 +638,7 @@ html {
   #container #about .pics .shape {
     height: 70%;
     width: 65%;
-    margin-right: -20px;
-    margin-bottom: -40px;
+    margin: 0 0 -30px 0;
   }
   #container #work-history {
     height: 150vh;
