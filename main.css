@@ -34,6 +34,7 @@ html {
   background-size: cover;
   font-family: "Jost", sans-serif;
 }
+
 #container #side-menu {
   display: none;
   height: 0;
@@ -42,20 +43,27 @@ html {
   position: absolute;
   z-index: 1;
   transition: height 0.1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 #container #side-menu ul {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   display: none;
+  padding-top: 40px;
 }
+
 #container #side-menu ul li {
   list-style-type: none;
   margin: 40px 0;
   cursor: pointer;
   text-align: center;
 }
+
 #container #side-menu ul li a {
   text-decoration: none;
   padding-bottom: 2px;
@@ -64,12 +72,15 @@ html {
   font-size: 11px;
   font-family: "Jost", sans-serif;
 }
+
 #container #side-menu ul li a:hover {
   border-bottom: 3px solid #7d0883;
 }
+
 #container #side-menu ul li a:focus {
   color: #7d0883;
 }
+
 #container #side-menu ul li button {
   height: 28px;
   width: 120px;
@@ -81,16 +92,20 @@ html {
   cursor: pointer;
   font-family: "Jost", sans-serif;
 }
+
 #container #side-menu ul li button:hover {
   background-color: #280429;
 }
+
 #container #side-menu ul li button:active {
   background-color: #090e13;
   border: 1px solid #7d0883;
 }
+
 #container .item {
   scroll-snap-align: center;
 }
+
 #container header {
   height: 8%;
   background-color: 50;
@@ -100,16 +115,19 @@ html {
   z-index: 1;
   border-bottom: 1px solid #280429;
 }
+
 #container header ul {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 #container header ul li:not(first-child) {
   list-style: none;
   margin: 0 3%;
 }
+
 #container header ul li:not(first-child) a {
   text-decoration: none;
   color: #ffffff;
@@ -117,21 +135,27 @@ html {
   transition: 0.1s border-bottom ease-in-out;
   font-size: 14px;
 }
+
 #container header ul li:not(first-child) a:hover {
   border-bottom: 3px solid #7d0883;
 }
+
 #container header ul li:not(first-child) a:active {
   color: #7d0883;
 }
+
 #container header ul li:first-child {
   margin: 0 10% 0 5%;
 }
+
 #container header ul li:first-child a:hover {
   border: none;
 }
+
 #container header ul li:nth-child(6) {
   margin-left: 10%;
 }
+
 #container header ul li:nth-child(6) button {
   padding: 8px 20px;
   border: none;
@@ -143,25 +167,31 @@ html {
   transition: background-color 0.1s ease-in-out;
   font-family: "Jost", sans-serif;
 }
+
 #container header ul li:nth-child(6) button:hover {
   background-color: #280429;
 }
+
 #container header ul li:nth-child(6) button:active {
   background-color: #090e13;
   border: 1px solid #7d0883;
 }
+
 #container header ul li:last-child {
   display: none;
 }
+
 #container header ul li:last-child a:hover {
   border: none;
 }
+
 #container #main {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 #container #main .box {
   background-color: rgba(0, 0, 0, 0.3137254902);
   backdrop-filter: blur(25%);
@@ -175,35 +205,42 @@ html {
   text-align: center;
   text-shadow: 2px 2px 2px #000000;
 }
+
 #container #main .box .hand {
   font-size: 17px;
   margin-top: -150px;
   padding-bottom: 25px;
   filter: drop-shadow(2px 2px 3px #000000);
 }
+
 #container #main .box .name {
   font-size: 40px;
   padding-bottom: 20px;
   font-family: "Bree Serif", serif;
 }
+
 #container #main .box .name .sign {
   font-size: 70px;
   font-weight: bolder;
   color: #7d0883;
 }
+
 #container #main .box .name h6 {
   font-weight: lighter;
   font-size: 20px;
   padding-bottom: 30px;
 }
+
 #container #main .box .intro {
   font-size: 15px;
   padding: 0 30% 20px 30%;
   letter-spacing: 1px;
 }
+
 #container #main .box .button a {
   text-decoration: none;
 }
+
 #container #main .box .button a button {
   height: 40px;
   width: 130px;
@@ -215,13 +252,16 @@ html {
   border-radius: 5px;
   font-size: 13px;
 }
+
 #container #main .box .button a button:hover {
   background-color: #280429;
 }
+
 #container #main .box .button a button:active {
   background-color: #090e13;
   border: 1px solid #7d0883;
 }
+
 #container #project {
   height: 100vh;
   background-color: #000000;
@@ -231,6 +271,7 @@ html {
   flex-direction: column;
   margin-top: -100px;
 }
+
 #container #project .title {
   flex: 10%;
   display: flex;
@@ -240,6 +281,7 @@ html {
   color: #ffffff;
   font-family: "Bree Serif", serif;
 }
+
 #container #project .work-head {
   flex: 90%;
   display: grid;
@@ -248,6 +290,7 @@ html {
   padding: 0 5%;
   font-size: 13px;
 }
+
 #container #project .work-head .work {
   height: 200px;
   width: 70%;
@@ -256,9 +299,11 @@ html {
   align-items: center;
   flex-direction: column;
 }
+
 #container #project .work-head .work .project-name {
   color: #ffffff;
 }
+
 #container #project .work-head .work .butt {
   flex: 20%;
   width: 100%;
@@ -267,9 +312,11 @@ html {
   align-items: center;
   gap: 20px;
 }
+
 #container #project .work-head .work .butt a {
   text-decoration: none;
 }
+
 #container #project .work-head .work .butt a button {
   height: 25px;
   width: 60px;
@@ -282,22 +329,27 @@ html {
   font-size: 11px;
   transition: 0.1s background-color ease-in-out;
 }
+
 #container #project .work-head .work .butt a button:hover {
   background-color: #7d0883;
 }
+
 #container #project .work-head .work .butt a button:active {
   background-color: #090e13;
   border: 1px solid #7d0883;
 }
+
 #container #project .more {
   flex: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 #container #project .more a {
   text-decoration: none;
 }
+
 #container #project .more a button {
   height: 40px;
   width: 150px;
@@ -311,17 +363,21 @@ html {
   transition: 0.1s background-color ease-in-out;
   font-family: "Jost", sans-serif;
 }
+
 #container #project .more a button:hover {
   background-color: #280429;
 }
+
 #container #project .more a button:active {
   background-color: #090e13;
   border: 1px solid #7d0883;
 }
+
 #container #about {
   height: 100vh;
   display: flex;
 }
+
 #container #about .info {
   flex: 60%;
   background-color: #090e13;
@@ -334,6 +390,7 @@ html {
   font-size: 14px;
   letter-spacing: 1px;
 }
+
 #container #about .info h2 {
   font-size: 25px;
   border-bottom: 3px solid #7d0883;
@@ -342,23 +399,28 @@ html {
   font-family: "Bree Serif", serif;
   font-weight: lighter;
 }
+
 #container #about .info .tech {
   font-size: 12px;
   padding: 20px 0;
 }
+
 #container #about .info ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
 #container #about .info ul li {
   list-style-type: none;
   padding: 8px 20px 8px 0;
   display: flex;
   align-items: center;
 }
+
 #container #about .info ul li img {
   margin-right: 5%;
 }
+
 #container #about .pics {
   flex: 40%;
   display: flex;
@@ -366,16 +428,19 @@ html {
   align-items: center;
   background-color: #090e13;
 }
+
 #container #about .pics .shape {
   height: 50%;
   width: 60%;
   background-color: #280429;
   border-radius: 5px;
 }
+
 #container #about .pics .shape img {
   margin: -15px 0 0 -15px;
   border-radius: 5px;
 }
+
 #container #work-history {
   height: 90vh;
   display: flex;
@@ -384,17 +449,25 @@ html {
   flex-direction: column;
   color: #ffffff;
 }
+
 #container #work-history .head {
   flex: 10%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #280429;
   font-size: 22px;
   color: #ffffff;
   font-family: "Jost", sans-serif;
+  background-color: #000000;
 }
+
+#container #work-history .head h4 {
+  font-weight: lighter;
+  border-bottom: 3px solid #7d0883;
+  padding-bottom: 5px;
+}
+
 #container #work-history .tail {
   flex: 80%;
   width: 100%;
@@ -403,8 +476,9 @@ html {
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
 }
+
 #container #work-history .tail .work {
-  height: 200px;
+  height: 170px;
   width: 70%;
   margin: 20px;
   transform: skew(-10deg);
@@ -412,13 +486,14 @@ html {
   justify-content: center;
   align-items: center;
 }
+
 #container #work-history .tail .work .image {
   flex: 30%;
   height: 100%;
   background: url(ospa2.jpg);
   background-size: cover;
-  filter: grayscale(30%);
 }
+
 #container #work-history .tail .work .details {
   flex: 70%;
   height: 100%;
@@ -429,12 +504,15 @@ html {
   align-items: flex-start;
   flex-direction: column;
   padding: 0 0 0 5%;
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Jost", sans-serif;
 }
+
 #container #work-history .tail .work .start {
-  font-size: 17px;
+  font-size: 14px;
+  padding: 10px 0;
 }
+
 #container #contact {
   height: 85vh;
   background-color: #090e13;
@@ -442,11 +520,13 @@ html {
   justify-content: center;
   align-items: center;
 }
+
 #container #contact .left {
   padding: 0 2%;
   flex: 50%;
   height: 100%;
 }
+
 #container #contact .mid {
   border-radius: 5px;
   flex: 50%;
@@ -458,16 +538,19 @@ html {
   color: #ffffff;
   background-color: #000000;
 }
+
 #container #contact .mid h2 {
   font-size: 30px;
   padding-bottom: 50px;
 }
+
 #container #contact .mid form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 #container #contact .mid form input[type=text] {
   margin-bottom: 50px;
   border: none;
@@ -478,10 +561,12 @@ html {
   color: #ffffff;
   font-size: 15px;
 }
+
 #container #contact .mid form input[type=text]::placeholder {
   padding-left: 2%;
   font-size: 15px;
 }
+
 #container #contact .mid form input[type=submit] {
   height: 40px;
   width: 150px;
@@ -494,13 +579,16 @@ html {
   font-size: 12px;
   transition: 0.1s background-color ease-in-out;
 }
+
 #container #contact .mid form input[type=submit]:hover {
   background-color: #280429;
 }
+
 #container #contact .mid form input[type=submit]:active {
   background-color: #090e13;
   border: 1px solid #7d0883;
 }
+
 #container .right {
   flex: 10%;
   height: 100%;
@@ -509,10 +597,12 @@ html {
   align-items: center;
   flex-direction: column;
 }
+
 #container .right ul li {
   list-style-type: none;
   margin: 30px 0;
 }
+
 #container footer {
   height: 5vh;
   background-color: #280429;
@@ -525,243 +615,327 @@ html {
 }
 
 @media screen and (max-width: 700px) {
-  body {
-    overflow: hidden;
-  }
   #container #side-menu {
     display: block;
   }
+
   #container .item {
     scroll-snap-align: start;
   }
+
   #container header {
     backdrop-filter: blur(5px);
   }
+
   #container header ul li:not(first-child) {
     display: none;
   }
+
   #container header ul li:first-child {
     display: block;
     margin: 0 60% 0 0;
   }
+
   #container header ul li:last-child {
     display: block;
   }
+
   #container #main {
     height: 100vh;
   }
+
   #container #main .box {
     margin-top: -70px;
     height: 75%;
     width: 90%;
     backdrop-filter: blur(2px);
   }
+
   #container #main .box .hand {
     font-size: 15px;
   }
+
   #container #main .box .hand img {
     width: 50px;
     height: 50px;
     font-size: 0;
   }
+
   #container #main .box .name {
     font-size: 28px;
     padding: 30px 0 60px 0;
   }
+
   #container #main .box .name .sign {
     font-size: 40px;
     color: #7d0883;
   }
+
   #container #main .box .name h6 {
     font-size: 17px;
   }
+
   #container #main .box .intro {
     font-size: 14px;
     padding: 0 10% 40px 10%;
   }
+
   #container #main .box .button a {
     text-decoration: none;
   }
+
   #container #main .box .button a button {
     height: 32px;
     width: 110px;
     font-size: 11px;
   }
+
   #container #project {
     height: 280vh;
     width: 100vw;
     margin-bottom: 50px;
   }
+
   #container #project .title {
     flex: 5%;
     font-size: 20px;
   }
+
   #container #project .work-head {
     flex: 100%;
     width: 80%;
     grid-template-columns: repeat(1, 1fr);
     padding: 0;
   }
+
   #container #project .work-head .work {
-    width: 80%;
-    height: 250px;
+    width: 70%;
+    height: 150px;
     margin: 10px 0;
   }
+
   #container #project .work-head .work .show {
-    flex: 50%;
+    flex: 40%;
   }
+
   #container #project .work-head .work .butt {
     flex: 50%;
   }
+
   #container #project .work-head .work a {
     margin: 0 5%;
   }
+
   #container #project .work-head .work a button {
     height: 30px;
     width: 60px;
     font-size: 11px;
   }
+
   #container #project .more a button {
     height: 35px;
     width: 110px;
     font-size: 11px;
   }
+
   #container #about {
     margin-top: -50px;
     height: 90vh;
     flex-direction: column-reverse;
   }
+
   #container #about .info {
     flex: 50%;
     padding: 0 14%;
   }
+
   #container #about .info h2 {
     font-size: 20px;
     margin: -10px 0 8px 0;
   }
+
   #container #about .info .tech {
     padding: 10px 0;
   }
+
   #container #about .info ul li {
     padding: 4px 20px 4px 0;
   }
+
   #container #about .pics {
     flex: 40%;
     padding: 20px 3% 0 3%;
   }
+
   #container #about .pics .shape {
     height: 70%;
     width: 65%;
     margin: 0 0 -30px 0;
   }
+
   #container #work-history {
     height: 150vh;
   }
+
   #container #work-history .head {
     flex: 5%;
     font-size: 20px;
   }
+
   #container #work-history .tail {
     flex: 95%;
     grid-template-columns: 1fr;
   }
+
   #container #work-history .tail .work {
     height: 200px;
     width: 70%;
   }
+
   #container #work-history .tail .work .image {
     flex: 30%;
   }
+
   #container #work-history .tail .work .details {
     flex: 70%;
   }
+
   #container #contact {
     height: 95vh;
     flex-direction: column;
     padding: 0 3%;
   }
+
   #container #contact .left {
     flex: 30%;
   }
+
   #container #contact .mid {
     width: 100%;
     flex: 25%;
   }
+
   #container #contact .mid h2 {
     font-size: 18px;
   }
+
   #container #contact .mid form input[type=text] {
     margin-bottom: 30px;
     width: 70vw;
     font-size: 13px;
     margin-bottom: 40px;
   }
+
   #container #contact .mid form input[type=text]::placeholder {
     font-size: 10px;
   }
+
   #container #contact .mid form input[type=submit] {
     height: 30px;
     width: 100px;
     font-size: 10px;
   }
+
   #container #contact .right {
     width: 100%;
     flex: 2%;
   }
+
   #container #contact .right ul {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   #container #contact .right ul li {
     margin: 0 15%;
   }
+
   #container #contact .right ul li img {
     height: 20px;
   }
 }
+
 @media screen and (max-width: 400px) {
   #container #main {
     height: 95vh;
   }
+
   #container #main .box {
     height: 60%;
     width: 96%;
   }
+
   #container #main .box .hand {
     margin-top: -20px;
   }
+
   #container #main .box .name {
     font-size: 24px;
     padding: 30px 0 40px 0;
   }
+
   #container #main .box .name .sign {
     font-size: 35px;
   }
+
   #container #main .box .intro {
     font-size: 14px;
     padding: 0 10% 40px 10%;
   }
+
   #container .work-head {
     height: 150vh;
   }
+
   #container .work-head .work {
-    width: 95% !important;
-    height: 70% !important;
+    width: 90% !important;
   }
+
+  #container .work-head .butt {
+    margin-top: 10px;
+  }
+
   #about {
     flex-direction: column-reverse;
   }
+
   #about .info {
     flex: 50%;
     padding: 0 10%;
     letter-spacing: 1px;
   }
+
   #about .info ul li {
     font-size: 11px;
   }
+
   #about .pics .shape {
     height: 70%;
     width: 35%;
   }
-}/*# sourceMappingURL=main.css.map */
+
+  #work-history .head h4 {
+    font-size: 18px;
+  }
+
+  #work-history .tail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #work-history .tail .work {
+    height: 180px;
+  }
+
+  #work-history .tail .work .image {
+    display: none;
+  }
+
+  #work-history .tail .work .details {
+    width: 100vw;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
