@@ -782,6 +782,8 @@ html {
     // work history
     #work-history {
       height: 150vh;
+      padding-top: 50px;
+      background-color: $primary_2;
 
       .head {
         flex: 5%;
