@@ -7,14 +7,13 @@ let menuItem = document.querySelector(".menu-item");
 button.addEventListener("click", show);
 
 function show() {
-  if (box.style.height == "70%") {
+  if (box.style.height == "60%") {
     img.src = "hamburger.svg";
     box.style.height = "0";
     menuItem.style.display = "none";
   } else {
     img.src = "close.svg";
-    box.style.height = "70%";
-
+    box.style.height = "60%";
     menuItem.style.display = "block";
   }
 }
