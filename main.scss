@@ -8,6 +8,7 @@ $blur: #11111100;
 
 $primaryF: "Bree Serif", serif;
 $secondaryF: "Jost", sans-serif;
+
 @mixin flex {
   display: flex;
   justify-content: center;
@@ -49,6 +50,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: $secondaryF;
+
   // side menu
   #side-menu {
     display: none;
@@ -58,15 +60,20 @@ html {
     position: absolute;
     z-index: 1;
     transition: height 0.1s ease-in-out;
+    @include flex;
+
     ul {
       @include flex;
       flex-direction: column;
       display: none;
+      padding-top: 40px;
+
       li {
         list-style-type: none;
         margin: 40px 0;
         cursor: pointer;
         text-align: center;
+
         a {
           text-decoration: none;
           padding-bottom: 2px;
@@ -75,12 +82,15 @@ html {
           font-size: 11px;
           font-family: "Jost", sans-serif;
         }
+
         a:hover {
           border-bottom: 3px solid $primary;
         }
+
         a:focus {
           color: $primary;
         }
+
         button {
           height: 28px;
           width: 120px;
@@ -92,9 +102,11 @@ html {
           cursor: pointer;
           font-family: $secondaryF;
         }
+
         button:hover {
           background-color: $hover;
         }
+
         button:active {
           background-color: $primary_2;
           border: 1px solid $primary;
@@ -102,11 +114,13 @@ html {
       }
     }
   }
+
   // side menu end
 
   .item {
     scroll-snap-align: center;
   }
+
   // header
   header {
     height: 8%;
@@ -116,12 +130,15 @@ html {
     top: 0;
     z-index: 1;
     border-bottom: 1px solid $hover;
+
     ul {
       height: 100%;
       @include flex;
+
       li:not(first-child) {
         list-style: none;
         margin: 0 3%;
+
         a {
           text-decoration: none;
           color: $white;
@@ -129,21 +146,27 @@ html {
           transition: 0.1s border-bottom ease-in-out;
           font-size: 14px;
         }
+
         a:hover {
           border-bottom: 3px solid $primary;
         }
+
         a:active {
           color: $primary;
         }
       }
+
       li:first-child {
         margin: 0 10% 0 5%;
       }
+
       li:first-child a:hover {
         border: none;
       }
+
       li:nth-child(6) {
         margin-left: 10%;
+
         button {
           padding: 8px 20px;
           border: none;
@@ -155,26 +178,32 @@ html {
           transition: background-color 0.1s ease-in-out;
           font-family: $secondaryF;
         }
+
         button:hover {
           background-color: $hover;
         }
+
         button:active {
           background-color: $primary_2;
           border: 1px solid $primary;
         }
       }
+
       li:last-child {
         display: none;
       }
+
       li:last-child a:hover {
         border: none;
       }
     }
   }
+
   // main-area
   #main {
     height: 100vh;
     @include flex;
+
     .box {
       background-color: #00000050;
       backdrop-filter: blur(25%);
@@ -185,35 +214,42 @@ html {
       flex-direction: column;
       text-align: center;
       text-shadow: 2px 2px 2px $black;
+
       .hand {
         font-size: 17px;
         margin-top: -150px;
         padding-bottom: 25px;
         filter: drop-shadow(2px 2px 3px $black);
       }
+
       .name {
         font-size: 40px;
         padding-bottom: 20px;
         font-family: $primaryF;
+
         .sign {
           font-size: 70px;
           font-weight: bolder;
           color: $primary;
         }
+
         h6 {
           font-weight: lighter;
           font-size: 20px;
           padding-bottom: 30px;
         }
       }
+
       .intro {
         font-size: 15px;
         padding: 0 30% 20px 30%;
         letter-spacing: 1px;
       }
+
       .button {
         a {
           text-decoration: none;
+
           button {
             height: 40px;
             width: 130px;
@@ -225,9 +261,11 @@ html {
             border-radius: 5px;
             font-size: 13px;
           }
+
           button:hover {
             background-color: $hover;
           }
+
           button:active {
             background-color: $primary_2;
             border: 1px solid $primary;
@@ -236,6 +274,7 @@ html {
       }
     }
   }
+
   // project
   #project {
     height: 100vh;
@@ -243,6 +282,7 @@ html {
     @include flex;
     flex-direction: column;
     margin-top: -100px;
+
     .title {
       flex: 10%;
       @include flex;
@@ -250,6 +290,7 @@ html {
       color: $white;
       font-family: $primaryF;
     }
+
     .work-head {
       flex: 90%;
       display: grid;
@@ -257,21 +298,26 @@ html {
       place-items: center;
       padding: 0 5%;
       font-size: 13px;
+
       .work {
         height: 200px;
         width: 70%;
         @include flex;
         flex-direction: column;
+
         .project-name {
           color: $white;
         }
+
         .butt {
           flex: 20%;
           width: 100%;
           @include flex;
           gap: 20px;
+
           a {
             text-decoration: none;
+
             button {
               height: 25px;
               width: 60px;
@@ -284,9 +330,11 @@ html {
               font-size: 11px;
               transition: 0.1s background-color ease-in-out;
             }
+
             button:hover {
               background-color: $primary;
             }
+
             button:active {
               background-color: $primary_2;
               border: 1px solid $primary;
@@ -295,11 +343,14 @@ html {
         }
       }
     }
+
     .more {
       flex: 10%;
       @include flex;
+
       a {
         text-decoration: none;
+
         button {
           height: 40px;
           width: 150px;
@@ -313,9 +364,11 @@ html {
           transition: 0.1s background-color ease-in-out;
           font-family: $secondaryF;
         }
+
         button:hover {
           background-color: $hover;
         }
+
         button:active {
           background-color: $primary_2;
           border: 1px solid $primary;
@@ -323,10 +376,12 @@ html {
       }
     }
   }
+
   // about
   #about {
     height: 100vh;
     display: flex;
+
     .info {
       flex: 60%;
       background-color: $primary_2;
@@ -338,6 +393,7 @@ html {
       padding: 0 10%;
       font-size: 14px;
       letter-spacing: 1px;
+
       h2 {
         font-size: 25px;
         border-bottom: 3px solid $primary;
@@ -346,33 +402,40 @@ html {
         font-family: "Bree Serif", serif;
         font-weight: lighter;
       }
+
       .tech {
         font-size: 12px;
         padding: 20px 0;
       }
+
       ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+
         li {
           list-style-type: none;
           padding: 8px 20px 8px 0;
           display: flex;
           align-items: center;
+
           img {
             margin-right: 5%;
           }
         }
       }
     }
+
     .pics {
       flex: 40%;
       @include flex;
       background-color: $primary_2;
+
       .shape {
         height: 50%;
         width: 60%;
         background-color: $hover;
         border-radius: 5px;
+
         img {
           margin: -15px 0 0 -15px;
           border-radius: 5px;
@@ -380,21 +443,30 @@ html {
       }
     }
   }
+
   // work history
   #work-history {
     height: 90vh;
     @include flex;
     flex-direction: column;
     color: $white;
+
     .head {
       flex: 10%;
       width: 100%;
       @include flex;
-      background-color: $hover;
       font-size: 22px;
       color: $white;
       font-family: $secondaryF;
+      background-color: $black;
+
+      h4 {
+        font-weight: lighter;
+        border-bottom: 3px solid $primary;
+        padding-bottom: 5px;
+      }
     }
+
     .tail {
       flex: 80%;
       width: 100%;
@@ -402,19 +474,21 @@ html {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       place-items: center;
+
       .work {
-        height: 200px;
+        height: 170px;
         width: 70%;
         margin: 20px;
         transform: skew(-10deg);
         @include flex;
+
         .image {
           flex: 30%;
           height: 100%;
           background: url(ospa2.jpg);
           background-size: cover;
-          filter: grayscale(30%);
         }
+
         .details {
           flex: 70%;
           height: 100%;
@@ -423,25 +497,30 @@ html {
           align-items: flex-start;
           flex-direction: column;
           padding: 0 0 0 5%;
-          font-size: 14px;
+          font-size: 12px;
           font-family: $secondaryF;
         }
+
         .start {
-          font-size: 17px;
+          font-size: 14px;
+          padding: 10px 0;
         }
       }
     }
   }
+
   // contact
   #contact {
     height: 85vh;
     background-color: $primary_2;
     @include flex;
+
     .left {
       padding: 0 2%;
       flex: 50%;
       height: 100%;
     }
+
     .mid {
       border-radius: 5px;
       flex: 50%;
@@ -450,13 +529,16 @@ html {
       flex-direction: column;
       color: $white;
       background-color: $black;
+
       h2 {
         font-size: 30px;
         padding-bottom: 50px;
       }
+
       form {
         @include flex;
         flex-direction: column;
+
         input[type="text"] {
           margin-bottom: 50px;
           border: none;
@@ -467,10 +549,12 @@ html {
           color: $white;
           font-size: 15px;
         }
+
         input[type="text"]::placeholder {
           padding-left: 2%;
           font-size: 15px;
         }
+
         input[type="submit"] {
           height: 40px;
           width: 150px;
@@ -483,9 +567,11 @@ html {
           font-size: 12px;
           transition: 0.1s background-color ease-in-out;
         }
+
         input[type="submit"]:hover {
           background-color: $hover;
         }
+
         input[type="submit"]:active {
           background-color: $primary_2;
           border: 1px solid $primary;
@@ -493,11 +579,13 @@ html {
       }
     }
   }
+
   .right {
     flex: 10%;
     height: 100%;
     @include flex;
     flex-direction: column;
+
     ul {
       li {
         list-style-type: none;
@@ -505,6 +593,7 @@ html {
       }
     }
   }
+
   footer {
     height: 5vh;
     background-color: $hover;
@@ -517,66 +606,78 @@ html {
 
 // responsiveness(mobile)
 @media screen and (max-width: 700px) {
-  body {
-    overflow: hidden;
-  }
   #container {
     #side-menu {
       display: block;
     }
+
     .item {
       scroll-snap-align: start;
     }
+
     // header
     header {
       backdrop-filter: blur(5px);
+
       ul {
         li:not(first-child) {
           display: none;
         }
+
         li:first-child {
           display: block;
           margin: 0 60% 0 0;
         }
+
         li:last-child {
           display: block;
         }
       }
     }
+
     // main-area
     #main {
       height: 100vh;
+
       .box {
         margin-top: -70px;
         height: 75%;
         width: 90%;
         backdrop-filter: blur(2px);
+
         .hand {
           font-size: 15px;
+
           img {
             width: 50px;
             height: 50px;
             font-size: 0;
           }
         }
+
         .name {
           font-size: 28px;
           padding: 30px 0 60px 0;
+
           .sign {
             font-size: 40px;
             color: $primary;
           }
+
           h6 {
             font-size: 17px;
           }
         }
+
         .intro {
           font-size: 14px;
           padding: 0 10% 40px 10%;
         }
+
         .button {
           a {
             text-decoration: none;
+
             button {
               height: 32px;
               width: 110px;
@@ -586,32 +687,40 @@ html {
         }
       }
     }
+
     // project
     #project {
       height: 280vh;
       width: 100vw;
       margin-bottom: 50px;
+
       .title {
         flex: 5%;
         font-size: 20px;
       }
+
       .work-head {
         flex: 100%;
         width: 80%;
         grid-template-columns: repeat(1, 1fr);
         padding: 0;
+
         .work {
-          width: 80%;
-          height: 250px;
+          width: 70%;
+          height: 150px;
           margin: 10px 0;
+
           .show {
-            flex: 50%;
+            flex: 40%;
           }
+
           .butt {
             flex: 50%;
           }
+
           a {
             margin: 0 5%;
+
             button {
               height: 30px;
               width: 60px;
@@ -620,6 +729,7 @@ html {
           }
         }
       }
+
       .more {
         a {
           button {
@@ -630,30 +740,37 @@ html {
         }
       }
     }
+
     // about
     #about {
       margin-top: -50px;
       height: 90vh;
       flex-direction: column-reverse;
+
       .info {
         flex: 50%;
         padding: 0 14%;
+
         h2 {
           font-size: 20px;
           margin: -10px 0 8px 0;
         }
+
         .tech {
           padding: 10px 0;
         }
+
         ul {
           li {
             padding: 4px 20px 4px 0;
           }
         }
       }
+
       .pics {
         flex: 40%;
         padding: 20px 3% 0 3%;
+
         .shape {
           height: 70%;
           width: 65%;
@@ -661,42 +778,53 @@ html {
         }
       }
     }
+
     // work history
     #work-history {
       height: 150vh;
+
       .head {
         flex: 5%;
         font-size: 20px;
       }
+
       .tail {
         flex: 95%;
         grid-template-columns: 1fr;
+
         .work {
           height: 200px;
           width: 70%;
+
           .image {
             flex: 30%;
           }
+
           .details {
             flex: 70%;
           }
         }
       }
     }
+
     // contact
     #contact {
       height: 95vh;
       flex-direction: column;
       padding: 0 3%;
+
       .left {
         flex: 30%;
       }
+
       .mid {
         width: 100%;
         flex: 25%;
+
         h2 {
           font-size: 18px;
         }
+
         form {
           input[type="text"] {
             margin-bottom: 30px;
@@ -704,9 +832,11 @@ html {
             font-size: 13px;
             margin-bottom: 40px;
           }
+
           input[type="text"]::placeholder {
             font-size: 10px;
           }
+
           input[type="submit"] {
             height: 30px;
             width: 100px;
@@ -714,13 +844,17 @@ html {
           }
         }
       }
+
       .right {
         width: 100%;
         flex: 2%;
+
         ul {
           @include flex;
+
           li {
             margin: 0 15%;
+
             img {
               height: 20px;
             }
@@ -733,55 +867,95 @@ html {
 
 // responsiveness(mobile):smaller screen
 @media screen and (max-width: 400px) {
+
   // main-area
   #container {
     #main {
       height: 95vh;
+
       .box {
         height: 60%;
         width: 96%;
+
         .hand {
           margin-top: -20px;
         }
+
         .name {
           font-size: 24px;
           padding: 30px 0 40px 0;
+
           .sign {
             font-size: 35px;
           }
         }
+
         .intro {
           font-size: 14px;
           padding: 0 10% 40px 10%;
         }
       }
     }
+
     // project
     .work-head {
       height: 150vh;
+
       .work {
-        width: 95% !important;
-        height: 70% !important;
+        width: 90% !important;
+      }
+
+      .butt {
+        margin-top: 10px;
       }
     }
   }
+
   // about
   #about {
     flex-direction: column-reverse;
+
     .info {
       flex: 50%;
       padding: 0 10%;
       letter-spacing: 1px;
+
       ul {
         li {
           font-size: 11px;
         }
       }
     }
+
     .pics {
       .shape {
         height: 70%;
         width: 35%;
+      }
+    }
+  }
+
+  // work history
+  #work-history {
+    .head {
+      h4 {
+        font-size: 18px;
+      }
+    }
+
+    .tail {
+      @include flex;
+
+      .work {
+        height: 180px;
+
+        .image {
+          display: none;
+        }
+
+        .details {
+          width: 100vw;
+        }
       }
     }
   }
