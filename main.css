@@ -58,7 +58,7 @@ html {
   list-style-type: none;
   margin: 40px 0;
   cursor: pointer;
-  text-align: center;
+  margin-left: 40%;
 }
 #container #side-menu ul li a {
   text-decoration: none;
@@ -67,6 +67,13 @@ html {
   transition: 0.1s color ease-in-out;
   font-size: 11px;
   font-family: "Jost", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+#container #side-menu ul li a img {
+  margin-right: 5px;
 }
 #container #side-menu ul li a:hover {
   border-bottom: 3px solid #7d0883;
@@ -120,6 +127,12 @@ html {
   padding-bottom: 2px;
   transition: 0.1s border-bottom ease-in-out;
   font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container header ul li:not(first-child) a img {
+  margin-right: 5px;
 }
 #container header ul li:not(first-child) a:hover {
   border-bottom: 3px solid #7d0883;
