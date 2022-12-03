@@ -62,17 +62,19 @@ html {
     transition: height 0.1s ease-in-out;
     @include flex;
 
+
     ul {
       @include flex;
       flex-direction: column;
       display: none;
       padding-top: 40px;
 
+
       li {
         list-style-type: none;
         margin: 40px 0;
         cursor: pointer;
-        text-align: center;
+        margin-left: 40%;
 
         a {
           text-decoration: none;
@@ -81,6 +83,14 @@ html {
           transition: 0.1s color ease-in-out;
           font-size: 11px;
           font-family: "Jost", sans-serif;
+          @include flex;
+          justify-content: flex-start;
+
+
+          img {
+            margin-right: 5px;
+          }
+
         }
 
         a:hover {
@@ -139,12 +149,18 @@ html {
         list-style: none;
         margin: 0 3%;
 
+
         a {
           text-decoration: none;
           color: $white;
           padding-bottom: 2px;
           transition: 0.1s border-bottom ease-in-out;
           font-size: 14px;
+          @include flex;
+
+          img {
+            margin-right: 5px;
+          }
         }
 
         a:hover {
@@ -1041,3 +1057,6 @@ html {
     }
   }
 }
+
+// // landscape mobile(small)
+// @media screen and (max-width:450px) and (orientation:landscape) {}
